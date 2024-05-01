@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="titulo">Encriptador de Texto</title>
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+            <header>
+                <img class="logo" src="img/Logo.png" alt="Logo Alura">
+            </header>
+
+            <main>
+                <form>
+                    <textarea cols="70" rows="10" id="textoIngresado" class="input-texto" required placeholder="Ingrese aqui el texto"></textarea>
+                    <button type="button" id="buttonEncriptar" class="button-padron" value="encriptar" name="botonEncriptar" onclick="encriptarMensaje()">Encriptar</button>
+                    <button type="button" id="buttonDesencriptar" class="button-padron" value="desencriptar" name="botonDesencriptar" onclick="desencriptarMensaje()">Desencriptar</button>
+                    <span id="textoExclamativo"></span>
+                </form>
+
+                <div class="rectangulo"></div>
+                <p id="textoSalida"></p>
+                <img id="cifrado" src="img/Cifrado.png" alt="Imagen de cifrado de informacion">
+
+                <form>    
+                    <p id="textoGrande"></p>
+                    <p id="textoPequeno"></p>
+                    <button type="button" id="copiar" value="copiar" name="botonCopiar" onclick="copiarTexto()">Copiar</button>
+                </form>
+                        
+            </main>
+            
+            <footer>
+                <p class="copyright">&copy Suyapa Ruiz - 2024</p>
+            </footer>
+
+            <script src="app.js"></script>
+    </body>
+</html>
